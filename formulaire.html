@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Fiche d'Alerte Réputationnelle Standard - CELTIIS</title>
+    <script src="/Formulaire/formulaire.js"></script>
+</head>
+<style>
+    .max-w-lg {
+        max-width: 40rem;
+    }
+</style>
+
+<body class="flex items-center justify-center min-h-screen p-6 bg-gray-200">
+    <div class="w-full max-w-lg p-6 bg-white border-4 border-double rounded-lg shadow-lg lg:p-8 border-lime-500">
+        <!-- Logo -->
+        <div class="flex justify-between p-6 lg:p-4">
+            <div class="mb-6 f">
+                <img src="/Formulaire/src/images/Celtiis-Benin LOGO.jpg" alt="Logo SBIN"
+                    class="object-contain h-10 rounded-lg lg:h-16">
+            </div>
+            <div class="mb-6 ">
+                <img src="/Formulaire/src/images/SBIN-Logo.png" alt="Logo SBIN" class="object-contain h-8 lg:h-14">
+            </div>
+        </div>
+
+        <!-- Titre -->
+        <h2 class="my-6 text-2xl font-bold text-center text-black">
+            Fiche d'Alerte Réputationnelle Standard
+        </h2>
+
+        <!-- Description -->
+        <div id="formDescription" class="p-4 mb-6 bg-blue-100 border-l-4 border-blue-500 rounded-md">
+            <p class="text-sm text-blue-800">
+                Votre avis et votre vigilance sont essentiels pour nous aider à maintenir une information juste et à
+                répondre rapidement aux préoccupations. Si vous avez vu ou entendu quelque chose d'important
+                (positif ou
+                négatif, rumeur, fausse information...) concernant Celtiis, veuillez nous le signaler ici.
+            </p>
+            <p class="mt-2 text-sm text-blue-800">
+                <strong>Note :</strong> Les informations fournies seront traitées avec confidentialité.
+            </p>
+        </div>
+
+        <!-- Formulaire principal -->
+        <form id="alertForm" class="space-y-4">
+            <!-- Information -->
+            <div>
+                <label for="information" class="block mb-1 text-sm font-medium text-gray-700">Ce que vous avez vu ou
+                    entendu <span class="text-red-600">*</span></label>
+                <input type="text" id="information" name="information" required
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            </div>
+
+            <!-- Date -->
+            <div>
+                <label for="source-date" class="block mb-1 text-sm font-medium text-gray-700">Date de
+                    l'information</label>
+                <input type="date" id="source-date" name="source-date"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md" />
+            </div>
+
+            <!-- Source -->
+            <div>
+                <label for="source" class="block mb-1 text-sm font-medium text-gray-700">Où avez-vous vu/entendu
+                    cette
+                    information ?</label>
+                <select id="source" name="source" class="w-full px-3 py-2 border border-gray-300 rounded-md">
+                    <option value="">-- Sélectionnez une option --</option>
+                    <option value="Réseau social">Réseau social</option>
+                    <option value="Site web">Site web</option>
+                    <option value="Média en ligne">Média en ligne</option>
+                    <option value="Autres">Autres</option>
+                </select>
+            </div>
+
+            <div id="link-field" class="hidden">
+                <label for="lien" class="block mb-1 text-sm font-medium text-gray-700">Lien de la publication
+                    :</label>
+                <input type="url" id="lien" name="lien" placeholder="https://..."
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md" />
+            </div>
+
+            <div id="other-fields" class="hidden space-y-4">
+                <div>
+                    <label for="source-name" class="block mb-1 text-sm font-medium text-gray-700">Nom de la source
+                        :</label>
+                    <input type="text" id="source-name" name="source-name"
+                        class="w-full px-3 py-2 border border-gray-300 rounded-md" />
+                </div>
+                <div>
+                    <label for="source-date-other" class="block mb-1 text-sm font-medium text-gray-700">Date de
+                        l'information :</label>
+                    <input type="date" id="source-date-other" name="source-date-other"
+                        class="w-full px-3 py-2 border border-gray-300 rounded-md" />
+                </div>
+            </div>
+
+            <!-- Auteur -->
+            <div>
+                <label for="author" class="block mb-1 text-sm font-medium text-gray-700">Qui a publié cela ?</label>
+                <input type="text" id="author" name="author"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md" />
+            </div>
+
+            <!-- Sujet principal -->
+            <div>
+                <label for="mainSubject" class="block mb-1 text-sm font-medium text-gray-700">Sujet principal <span
+                        class="text-red-600">*</span></label>
+                <input type="text" id="mainSubject" name="mainSubject" required
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md" />
+            </div>
+
+            <!-- Contenu -->
+            <div>
+                <label for="content" class="block mb-1 text-sm font-medium text-gray-700">Contenu exact de
+                    l'information
+                    <span class="text-red-600">*</span></label>
+                <textarea id="content" name="content" rows="4" required
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md"></textarea>
+            </div>
+
+            <!-- Nom/Pseudo -->
+            <div>
+                <label for="nameOrAlias" class="block mb-1 text-sm font-medium text-gray-700">Nom ou Pseudo
+                    (facultatif)</label>
+                <input type="text" id="nameOrAlias" name="nameOrAlias"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md" />
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <label for="contactInfo" class="block mb-1 text-sm font-medium text-gray-700">Email ou Téléphone
+                    (facultatif)</label>
+                <input type="text" id="contactInfo" name="contactInfo"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md" />
+            </div>
+
+            <!-- Bouton -->
+            <div>
+                <button type="submit"
+                    class="w-full px-4 py-2 font-semibold text-white transition duration-200 bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                    Envoyer mon signalement
+                </button>
+            </div>
+        </form>
+
+        <!-- Page de confirmation avec récapitulatif -->
+        <div id="confirmationPage" class="hidden space-y-6">
+            <div class="p-4 mb-4 bg-yellow-100 border-l-4 border-yellow-500 rounded-md">
+                <h3 class="text-lg font-medium text-yellow-800">Veuillez vérifier vos informations</h3>
+                <p class="text-sm text-yellow-700">Merci de confirmer l'exactitude des informations ci-dessous avant
+                    l'envoi final.</p>
+            </div>
+
+            <div class="p-6 border border-gray-200 rounded-lg bg-gray-50">
+                <h4 class="mb-4 text-lg font-medium text-gray-800">Récapitulatif de votre signalement</h4>
+
+                <div id="recap-content" class="space-y-4">
+                    <!-- Le récapitulatif sera inséré ici par JavaScript -->
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-3 sm:flex-row sm:justify-between">
+                <button id="editButton" type="submit"
+                    class="px-4 py-2 text-blue-600 bg-white border border-blue-600 rounded-md hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                    Modifier les informations
+                </button>
+                <button id="confirmButton" type="submit"
+                    class="px-4 py-2 font-semibold text-white transition duration-200 bg-green-600 rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
+                    Confirmer l'envoi
+                </button>
+            </div>
+        </div>
+
+        <!-- Message de succès -->
+        <div id="successMessage" class="hidden p-4 mt-6 text-green-800 bg-green-100 rounded-md">
+            <p class="font-medium">Envoi réussi!</p>
+            <p>Merci pour votre signalement. Nous avons bien reçu vos informations.</p>
+            <div class="mt-4">
+                <a href="/Formulaire/formulaire.html"
+                    class="inline-block px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600">Retour au
+                    formulaire</a>
+            </div>
+        </div>
+    </div>>
+</body>
+
+</html>

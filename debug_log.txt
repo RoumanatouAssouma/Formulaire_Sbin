@@ -1,0 +1,95 @@
+2025-05-14 15:33:22 - Request received
+Raw input: {"information":"EEEEEEEEEEEEE","source-date":"2025-05-14","source":"Réseau social","lien":"https://zsauezrioepy","source-name":"","source-date-other":"","author":"EEEEEEEEEEEEEEE","mainSubject":"QQQQQQQQQQQQQQ","content":"jklksdmqdKl rfù","nameOrAlias":"CCCCCCCCCCCCCCCCCCC","contactInfo":"eunice@gmail.com"}
+Input received: {"information":"EEEEEEEEEEEEE","source-date":"2025-05-14","source":"Réseau social","lien":"https://zsauezrioepy","source-name":"","source-date-other":"","author":"EEEEEEEEEEEEEEE","mainSubject":"QQQQQQQQQQQQQQ","content":"jklksdmqdKl rfù","nameOrAlias":"CCCCCCCCCCCCCCCCCCC","contactInfo":"eunice@gmail.com"}
+Decoded data: Array
+(
+    [information] => EEEEEEEEEEEEE
+    [source-date] => 2025-05-14
+    [source] => Réseau social
+    [lien] => https://zsauezrioepy
+    [source-name] => 
+    [source-date-other] => 
+    [author] => EEEEEEEEEEEEEEE
+    [mainSubject] => QQQQQQQQQQQQQQ
+    [content] => jklksdmqdKl rfù
+    [nameOrAlias] => CCCCCCCCCCCCCCCCCCC
+    [contactInfo] => eunice@gmail.com
+)
+
+Database error: SQLSTATE[HY000] [1049] Unknown database 'formulaire_alerte'
+2025-05-14 15:35:05 - Request received
+Raw input: {"information":"EEEEEEEEEEEEE","source-date":"2025-05-14","source":"Réseau social","lien":"https://zsauezrioepy","source-name":"","source-date-other":"","author":"EEEEEEEEEEEEEEE","mainSubject":"QQQQQQQQQQQQQQ","content":"jklksdmqdKl rfù","nameOrAlias":"CCCCCCCCCCCCCCCCCCC","contactInfo":"eunice@gmail.com"}
+Input received: {"information":"EEEEEEEEEEEEE","source-date":"2025-05-14","source":"Réseau social","lien":"https://zsauezrioepy","source-name":"","source-date-other":"","author":"EEEEEEEEEEEEEEE","mainSubject":"QQQQQQQQQQQQQQ","content":"jklksdmqdKl rfù","nameOrAlias":"CCCCCCCCCCCCCCCCCCC","contactInfo":"eunice@gmail.com"}
+Decoded data: Array
+(
+    [information] => EEEEEEEEEEEEE
+    [source-date] => 2025-05-14
+    [source] => Réseau social
+    [lien] => https://zsauezrioepy
+    [source-name] => 
+    [source-date-other] => 
+    [author] => EEEEEEEEEEEEEEE
+    [mainSubject] => QQQQQQQQQQQQQQ
+    [content] => jklksdmqdKl rfù
+    [nameOrAlias] => CCCCCCCCCCCCCCCCCCC
+    [contactInfo] => eunice@gmail.com
+)
+
+Database insertion successful
+2025-05-14 15:57:08 - Request received
+Raw input: {"information":"EEEEEEEEEEEEE","source-date":"2025-05-14","source":"Réseau social","lien":"https://zsauezrioepy","source-name":"","source-date-other":"","author":"EEEEEEEEEEEEEEE","mainSubject":"QQQQQQQQQQQQQQ","content":"zeuioprz","nameOrAlias":"CCCCCCCCCCCCCCCCCCC","contactInfo":"eunice@gmail.com"}
+Input received: {"information":"EEEEEEEEEEEEE","source-date":"2025-05-14","source":"Réseau social","lien":"https://zsauezrioepy","source-name":"","source-date-other":"","author":"EEEEEEEEEEEEEEE","mainSubject":"QQQQQQQQQQQQQQ","content":"zeuioprz","nameOrAlias":"CCCCCCCCCCCCCCCCCCC","contactInfo":"eunice@gmail.com"}
+Decoded data: Array
+(
+    [information] => EEEEEEEEEEEEE
+    [source-date] => 2025-05-14
+    [source] => Réseau social
+    [lien] => https://zsauezrioepy
+    [source-name] => 
+    [source-date-other] => 
+    [author] => EEEEEEEEEEEEEEE
+    [mainSubject] => QQQQQQQQQQQQQQ
+    [content] => zeuioprz
+    [nameOrAlias] => CCCCCCCCCCCCCCCCCCC
+    [contactInfo] => eunice@gmail.com
+)
+
+Database insertion successful
+2025-05-14 16:21:00 - Request received
+Raw input: {"information":"EEEEEEEEEEEEE","source-date":"2025-05-14","source":"Réseau social","lien":"https://zsauezrioepy","source-name":"","source-date-other":"","author":"EEEEEEEEEEEEEEE","mainSubject":"QQQQQQQQQQQQQQ","content":"yudfiopqsimwc","nameOrAlias":"CCCCCCCCCCCCCCCCCCC","contactInfo":"eunice@gmail.com"}
+Input received: {"information":"EEEEEEEEEEEEE","source-date":"2025-05-14","source":"Réseau social","lien":"https://zsauezrioepy","source-name":"","source-date-other":"","author":"EEEEEEEEEEEEEEE","mainSubject":"QQQQQQQQQQQQQQ","content":"yudfiopqsimwc","nameOrAlias":"CCCCCCCCCCCCCCCCCCC","contactInfo":"eunice@gmail.com"}
+Decoded data: Array
+(
+    [information] => EEEEEEEEEEEEE
+    [source-date] => 2025-05-14
+    [source] => Réseau social
+    [lien] => https://zsauezrioepy
+    [source-name] => 
+    [source-date-other] => 
+    [author] => EEEEEEEEEEEEEEE
+    [mainSubject] => QQQQQQQQQQQQQQ
+    [content] => yudfiopqsimwc
+    [nameOrAlias] => CCCCCCCCCCCCCCCCCCC
+    [contactInfo] => eunice@gmail.com
+)
+
+Database insertion successful
+2025-05-14 16:31:10 - Request received
+Raw input: {"information":"EEEEEEEEEEEEE","source-date":"2025-05-14","source":"Réseau social","lien":"https://zsauezrioepy","source-name":"","source-date-other":"","author":"EEEEEEEEEEEEEEE","mainSubject":"QQQQQQQQQQQQQQ","content":"ruqfjiosdmkl","nameOrAlias":"CCCCCCCCCCCCCCCCCCC","contactInfo":"eunice@gmail.com"}
+Input received: {"information":"EEEEEEEEEEEEE","source-date":"2025-05-14","source":"Réseau social","lien":"https://zsauezrioepy","source-name":"","source-date-other":"","author":"EEEEEEEEEEEEEEE","mainSubject":"QQQQQQQQQQQQQQ","content":"ruqfjiosdmkl","nameOrAlias":"CCCCCCCCCCCCCCCCCCC","contactInfo":"eunice@gmail.com"}
+Decoded data: Array
+(
+    [information] => EEEEEEEEEEEEE
+    [source-date] => 2025-05-14
+    [source] => Réseau social
+    [lien] => https://zsauezrioepy
+    [source-name] => 
+    [source-date-other] => 
+    [author] => EEEEEEEEEEEEEEE
+    [mainSubject] => QQQQQQQQQQQQQQ
+    [content] => ruqfjiosdmkl
+    [nameOrAlias] => CCCCCCCCCCCCCCCCCCC
+    [contactInfo] => eunice@gmail.com
+)
+
+Database insertion successful
