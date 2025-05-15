@@ -171,6 +171,17 @@
                 <div id="recap-content" class="space-y-4">
                     <!-- Le récapitulatif sera inséré ici par JavaScript -->
                 </div>
+                <div id="preview-container" class="hidden mt-4">
+                    <p class="font-semibold text-gray-700">Aperçu du fichier sélectionné :</p>
+                    <div class="flex items-center gap-3 mt-2">
+                        <div id="file-preview"
+                            class="flex items-center justify-center w-24 h-24 overflow-hidden bg-gray-100 border border-gray-300 rounded-md">
+                            <!-- L'image ou icône de prévisualisation va ici -->
+                        </div>
+                        <p id="file-name" class="text-sm text-gray-600 truncate max-w-[150px]"></p>
+                    </div>
+                </div>
+
             </div>
 
             <div class="flex flex-col gap-3 sm:flex-row sm:justify-between">
