@@ -9,6 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const successMessage = document.getElementById("successMessage");
   const editButton = document.getElementById("editButton");
   const confirmButton = document.getElementById("confirmButton");
+  const fileInput = document.getElementById("mediaUpload");
+  const previewContainer = document.getElementById("preview-container");
+  const filePreview = document.getElementById("file-preview");
+  const fileNameDisplay = document.getElementById("file-name");
 
   // Affichage conditionnel selon la source choisie
   function handleSourceChange() {
@@ -33,11 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Initialiser le formulaire selon la source sélectionnée (au cas où il y a une valeur par défaut)
   handleSourceChange();
-
-  const fileInput = document.getElementById("mediaUpload");
-  const previewContainer = document.getElementById("preview-container");
-  const filePreview = document.getElementById("file-preview");
-  const fileNameDisplay = document.getElementById("file-name");
 
   fileInput.addEventListener("change", function () {
     const file = this.files[0];
