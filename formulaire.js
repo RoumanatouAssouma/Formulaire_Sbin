@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initialiser le formulaire selon la source sélectionnée (au cas où il y a une valeur par défaut)
   handleSourceChange();
 
-  const fileInput = document.getElementById("media");
+  const fileInput = document.getElementById("mediaUpload");
   const previewContainer = document.getElementById("preview-container");
   const filePreview = document.getElementById("file-preview");
   const fileNameDisplay = document.getElementById("file-name");
