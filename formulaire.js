@@ -34,6 +34,43 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initialiser le formulaire selon la source sélectionnée (au cas où il y a une valeur par défaut)
   handleSourceChange();
 
+  const fileInput = document.getElementById("media");
+  const previewContainer = document.getElementById("preview-container");
+  const filePreview = document.getElementById("file-preview");
+  const fileNameDisplay = document.getElementById("file-name");
+
+  fileInput.addEventListener("change", function () {
+    const file = this.files[0];
+
+    if (file) {
+      fileNameDisplay.textContent = file.name;
+      previewContainer.classList.remove("hidden");
+
+      // Si c'est une image
+      if (file.type.startsWith("image/")) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          filePreview.innerHTML = `<img src="${e.target.result}" alt="Aperçu" class="object-cover w-full h-full">`;
+        };
+        reader.readAsDataURL(file);
+      }
+      // Si c'est une vidéo
+      else if (file.type.startsWith("video/")) {
+        filePreview.innerHTML = `<video class="object-cover w-full h-full" muted>
+                                    <source src="${URL.createObjectURL(
+                                      file
+                                    )}" type="${file.type}">
+                                  </video>`;
+      } else {
+        filePreview.innerHTML = `<span class="text-gray-500 text-xs">Pas d’aperçu</span>`;
+      }
+    } else {
+      previewContainer.classList.add("hidden");
+      filePreview.innerHTML = "";
+      fileNameDisplay.textContent = "";
+    }
+  });
+
   // Fonction de création du récapitulatif
   function createRecap(data) {
     recapContent.innerHTML = "";
@@ -70,6 +107,9 @@ document.addEventListener("DOMContentLoaded", () => {
             break;
           case "contactInfo":
             displayKey = "Contact";
+            break;
+          case "mediaUpload":
+            displayKey = "Image ou Vidéo";
             break;
         }
 
@@ -123,43 +163,6 @@ document.addEventListener("DOMContentLoaded", () => {
     form.classList.add("hidden");
     confirmationPage.classList.remove("hidden");
     createRecap(recapData);
-
-    const fileInput = document.getElementById("media");
-    const previewContainer = document.getElementById("preview-container");
-    const filePreview = document.getElementById("file-preview");
-    const fileNameDisplay = document.getElementById("file-name");
-
-    fileInput.addEventListener("change", function () {
-      const file = this.files[0];
-
-      if (file) {
-        fileNameDisplay.textContent = file.name;
-        previewContainer.classList.remove("hidden");
-
-        // Si c'est une image
-        if (file.type.startsWith("image/")) {
-          const reader = new FileReader();
-          reader.onload = function (e) {
-            filePreview.innerHTML = `<img src="${e.target.result}" alt="Aperçu" class="object-cover w-full h-full">`;
-          };
-          reader.readAsDataURL(file);
-        }
-        // Si c'est une vidéo
-        else if (file.type.startsWith("video/")) {
-          filePreview.innerHTML = `<video class="object-cover w-full h-full" muted>
-                                    <source src="${URL.createObjectURL(
-                                      file
-                                    )}" type="${file.type}">
-                                  </video>`;
-        } else {
-          filePreview.innerHTML = `<span class="text-gray-500 text-xs">Pas d’aperçu</span>`;
-        }
-      } else {
-        previewContainer.classList.add("hidden");
-        filePreview.innerHTML = "";
-        fileNameDisplay.textContent = "";
-      }
-    });
   });
 
   // Bouton pour modifier les données
