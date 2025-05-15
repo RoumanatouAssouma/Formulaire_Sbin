@@ -3,8 +3,6 @@ module.exports = {
    content: [
     './formulaire.html',
     './alerte.html',
-    './dashboard.html',
-    './pages/**/*.html',
   ],
   theme: {
     extend: {},
