@@ -109,7 +109,8 @@
 
             <!-- Auteur -->
             <div>
-                <label for="author" class="block mb-1 text-sm font-medium text-gray-700">Auteur de la publication?</label>
+                <label for="author" class="block mb-1 text-sm font-medium text-gray-700">Auteur de la
+                    publication</label>
                 <input type="text" id="author" name="author"
                     class="w-full px-3 py-2 border border-gray-300 rounded-md" />
             </div>
@@ -154,48 +155,47 @@
                     Envoyer mon signalement
                 </button>
             </div>
-        
 
-        <!-- Page de confirmation avec récapitulatif -->
-        <div id="confirmationPage" class="hidden space-y-6">
-            <div class="p-4 mb-4 bg-yellow-100 border-l-4 border-yellow-500 rounded-md">
-                <h3 class="text-lg font-medium text-yellow-800">Veuillez vérifier vos informations</h3>
-                <p class="text-sm text-yellow-700">Merci de confirmer l'exactitude des informations ci-dessous avant
-                    l'envoi final.</p>
-            </div>
 
-            <div class="p-6 border border-gray-200 rounded-lg bg-gray-50">
-                <h4 class="mb-4 text-lg font-medium text-gray-800">Récapitulatif de votre signalement</h4>
+            <!-- Page de confirmation avec récapitulatif -->
+            <div id="confirmationPage" class="hidden space-y-6">
+                <div class="p-4 mb-4 bg-yellow-100 border-l-4 border-yellow-500 rounded-md">
+                    <h3 class="text-lg font-medium text-yellow-800">Veuillez vérifier vos informations</h3>
+                    <p class="text-sm text-yellow-700">Merci de confirmer l'exactitude des informations ci-dessous avant
+                        l'envoi final.</p>
+                </div>
 
-                <div id="recap-content" class="space-y-4">
-                    <!-- Le récapitulatif sera inséré ici par JavaScript -->
+                <div class="p-6 border border-gray-200 rounded-lg bg-gray-50">
+                    <h4 class="mb-4 text-lg font-medium text-gray-800">Récapitulatif de votre signalement</h4>
+
+                    <div id="recap-content" class="space-y-4">
+                        <!-- Le récapitulatif sera inséré ici par JavaScript -->
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-3 sm:flex-row sm:justify-between">
+                    <button id="editButton" type="submit"
+                        class="px-4 py-2 text-blue-600 bg-white border border-blue-600 rounded-md hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                        Modifier les informations
+                    </button>
+                    <button id="confirmButton" type="submit"
+                        class="px-4 py-2 font-semibold text-white transition duration-200 bg-green-600 rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
+                        Confirmer l'envoi
+                    </button>
                 </div>
             </div>
 
-            <div class="flex flex-col gap-3 sm:flex-row sm:justify-between">
-                <button id="editButton" type="submit"
-                    class="px-4 py-2 text-blue-600 bg-white border border-blue-600 rounded-md hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-                    Modifier les informations
-                </button>
-                <button id="confirmButton" type="submit"
-                    class="px-4 py-2 font-semibold text-white transition duration-200 bg-green-600 rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
-                    Confirmer l'envoi
-                </button>
+            <!-- Message de succès -->
+            <div id="successMessage" class="hidden p-4 mt-6 text-green-800 bg-green-100 rounded-md">
+                <p class="font-medium">Envoi réussi!</p>
+                <p>Merci pour votre signalement. Nous avons bien reçu vos informations.</p>
+                <div class="mt-4">
+                    <a href="index.html"
+                        class="inline-block px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600">Retour au
+                        formulaire</a>
+                </div>
             </div>
         </div>
-
-        <!-- Message de succès -->
-        <div id="successMessage" class="hidden p-4 mt-6 text-green-800 bg-green-100 rounded-md">
-            <p class="font-medium">Envoi réussi!</p>
-            <p>Merci pour votre signalement. Nous avons bien reçu vos informations.</p>
-            <div class="mt-4">
-                <a href="index.html"
-                    class="inline-block px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600">Retour au
-                    formulaire</a>
-            </div>
-        </div>
-        </form>
-    </div>
 </body>
 
 </html>
