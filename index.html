@@ -84,6 +84,14 @@
                     class="w-full px-3 py-2 border border-gray-300 rounded-md" />
             </div>
 
+            <div id="media-upload-field" class="mt-4">
+                <label for="mediaUpload" class="block mb-1 text-sm font-medium text-gray-700">Image ou Vidéo :</label>
+                <input type="file" id="mediaUpload" name="mediaUpload" accept="image/*,video/*"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md" />
+                <p class="mt-1 text-xs text-gray-500">Formats acceptés : .jpg, .png, .mp4, etc.</p>
+            </div>
+
+
             <div id="other-fields" class="hidden space-y-4">
                 <div>
                     <label for="source-name" class="block mb-1 text-sm font-medium text-gray-700">Nom de la source
@@ -146,7 +154,7 @@
                     Envoyer mon signalement
                 </button>
             </div>
-        </form>
+        
 
         <!-- Page de confirmation avec récapitulatif -->
         <div id="confirmationPage" class="hidden space-y-6">
@@ -186,7 +194,8 @@
                     formulaire</a>
             </div>
         </div>
-    </div>>
+        </form>
+    </div>
 </body>
 
 </html>

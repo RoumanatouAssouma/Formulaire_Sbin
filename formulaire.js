@@ -1,6 +1,7 @@
        document.addEventListener("DOMContentLoaded", () => {
             const sourceSelect = document.getElementById("source")
             const linkField = document.getElementById("link-field")
+            const mediaUploadField = document.getElementById("media-upload-field")
             const otherFields = document.getElementById("other-fields")
             const form = document.getElementById("alertForm")
             const confirmationPage = document.getElementById("confirmationPage")
@@ -15,12 +16,15 @@
                 if (value === "Autres") {
                     linkField.classList.add("hidden")
                     otherFields.classList.remove("hidden")
+                    mediaUploadField.classList.remove("hidden");
                 } else if (value !== "") {
                     linkField.classList.remove("hidden")
                     otherFields.classList.add("hidden")
+                    mediaUploadField.classList.remove("hidden")
                 } else {
                     linkField.classList.add("hidden")
                     otherFields.classList.add("hidden")
+                    mediaUploadField.classList.add("hidden");
                 }
             }
 
