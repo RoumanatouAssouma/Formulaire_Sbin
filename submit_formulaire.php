@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         // Préparer la requête d'insertion
-        $stmt = $pdo->prepare('INSERT INTO formulaire_alerte (information, main_subject, content, source, source_date, lien, author, name_or_alias, contact_info) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)');
+        $stmt = $pdo->prepare('INSERT INTO formulaire_alerte (information, main_subject, content, source, source_date, lien,  author, name_or_alias, contact_info) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)');
         
         $stmt->execute([
             $data['information'],
