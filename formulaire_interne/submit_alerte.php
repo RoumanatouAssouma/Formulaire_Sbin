@@ -48,7 +48,7 @@ $notes = $data['notes'] ?? '';
 $dateCreation = date('Y-m-d H:i:s');
 
 // Préparer la requête SQL
-$sql = "INSERT INTO alertes (
+$sql = "INSERT INTO formulaire_interne (
     statut, date_observation, date_notification, canal_primaire,
     autre_canal_primaire, liens, auteur, objet_principal, propos,
     niveau_alerte, impact_potentiel, autre_impact, actions_immediates,
@@ -103,4 +103,3 @@ if ($stmt->execute()) {
 $stmt->close();
 $conn->close();
 ?>
-

@@ -476,7 +476,7 @@
 
                 try {
                     // Envoyer les données à la base de données via PHP
-                    const response = await fetch("/Formulaire/submit_alerte.php", {
+                    const response = await fetch("/formulaire_interne/submit_alerte.php", {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json",
