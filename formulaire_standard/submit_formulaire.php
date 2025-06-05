@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 throw new RuntimeException('Erreur lors du déplacement du fichier.');
             }
 
-            $mediaPath = "/upload_image/" . $newName; // ex: upload_image/64e3f3b24a3fc.jpg
+            $mediaPath = "/formulaire_standard/upload_image/" . $newName; // ex: upload_image/64e3f3b24a3fc.jpg
         }
 
         /* --------------------- 4) Insertion ---------------------- */

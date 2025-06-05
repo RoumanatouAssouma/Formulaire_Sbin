@@ -90,6 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (value) {
         const div = document.createElement("div");
         let displayKey = key;
+        let displayValue = value;
 
         // Améliorer l'affichage des clés
         switch (key) {
@@ -128,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
             break;
         }
 
-        div.innerHTML = `<strong>${displayKey} :</strong> ${value}`;
+        div.innerHTML = `<strong>${displayKey} :</strong> ${displayValue}`;
         recapContent.appendChild(div);
       }
     }
@@ -156,7 +157,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Soumission du formulaire
-  form.addEventListener("submit", (e) => {
+  form.addEventListener("submit", async function (e) {
     e.preventDefault();
 
     const formData = new FormData(form);
