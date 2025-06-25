@@ -141,7 +141,7 @@
                             stepTitle.textContent = "Gestion"
                             stepDescription.textContent = "Actions et suivi"
                             // On last step, change next button text
-                            nextButton.innerHTML = 'Voir le récapitulatif <i data-lucide="chevron-right" class="w-4 h-4">➡️</i>'
+                            nextButton.innerHTML = 'Récapitulatif <i data-lucide="chevron-right" class="w-4 h-4">➡️</i>'
                             break
                     }
                 }
@@ -971,3 +971,4 @@
             // Initialize UI
             updateUI()
         })
+        Récapitulatif

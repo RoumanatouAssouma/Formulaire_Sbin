@@ -2,7 +2,7 @@
 module.exports = {
    content: [
     './formulaire.html',
-    './alerte.html',
+    './index.html',
   ],
   theme: {
     extend: {},

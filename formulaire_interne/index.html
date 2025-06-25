@@ -53,24 +53,24 @@
     }
 </style>
 
-<body class="flex items-center justify-center min-h-screen p-4 bg-gray-100">
-    <div class="w-full max-w-2xl px-8 py-8 bg-white border-4 border-double rounded-lg shadow-lg border-lime-400">
+<body class="flex items-center justify-center min-h-screen p-4 mt-24 bg-gray-100">
+    <div class="w-full max-w-3xl px-6 bg-white border-4 border-double rounded-lg shadow-lg lg:p-10 border-lime-400">
         <!-- Logo -->
-        <div class="px-6 pt-6 pb-4">
+        <div class="mb-6 ">
             <!-- Logo Section -->
-            <div class="flex flex-wrap items-center justify-between mb-4 space-y-4 md:space-y-0">
+            <div class="flex justify-between pt-4 pb-4 pr-4 mt-6 border-b-2 border-gray-200 lg:space-y-4 lg:pt-8 ">
                 <div class="flex-shrink-0">
-                    <img src="/src/images/logo-celtiis_Bleu.png" alt="Logo CELTIIS" class="h-16 md:h-20">
+                    <img src="/src/images/logo-celtiis_Bleu.png" alt="Logo CELTIIS" class="w-20 md:h-16 lg:h-24 lg:w-32">
                 </div>
                 <div class="flex-shrink-0">
-                    <img src="/src/images/SBIN-Logo.png" alt="Logo SBIN" class="h-12 md:h-14">
+                    <img src="/src/images/SBIN-Logo.png" alt="Logo SBIN" class="w-24 h-12 r-2 H md:h-20 lg:h-16 lg:w-36">
                 </div>
             </div>
 
             <!-- Title and Navigation -->
-            <div class="flex flex-wrap items-center justify-between pt-4 border-t border-gray-200">
-                <div class="flex items-center gap-3">
-                    <a href="/formulaire_interne/alerte.html"
+            <div class="flex justify-between mt-20 border-gray-200 ">
+                <div class="flex items-center gap-3 ml-5">
+                    <a href="/formulaire_interne/index.html"
                         class="p-2 text-gray-600 transition-colors duration-200 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -79,7 +79,7 @@
                         </svg>
                         <span class="sr-only">Retour</span>
                     </a>
-                    <h1 class="text-2xl font-bold text-gray-800 md:text-3xl">Fiche de veille et d'alerte DTD</h1>
+                    <h1 class="text-lg font-bold text-gray-800 lg:text-2xl md:text-3xl">Fiche de veille et d'alerte DTD</h1>
                 </div>
             </div>
         </div>
@@ -99,7 +99,7 @@
                     </div>
                 </div>
                 <div class="mt-6 text-center">
-                    <a href="/formulaire_interne/alerte.html">
+                    <a href="/formulaire_interne/index.html">
                         <button
                             class="inline-flex items-center justify-center gap-2 px-4 py-2 border rounded-md bg-slate-300 hover:bg-slate-600">
                             <i data-lucide="arrow-left" class="w-4 h-4"></i>
@@ -130,8 +130,7 @@
             <div class="px-6 py-6 border-t border-b border-blue-200 bg-gradient-to-r from-blue-50 to-blue-100">
                 <div class="mb-6 text-center">
                     <div class="flex items-center justify-center gap-1">
-                        <h2 id="step-title" class="text-2xl font-bold text-gray-800"></h2>
-                        <h2 class="text-2xl font-bold text-gray-800"> - de l'alerte</h2>
+                        <h2 class="text-lg font-bold text-gray-800 lg:text-2xl"> Identification de l'alerte</h2>
                     </div>
                     <p id="step-description" class="mt-2 text-sm text-gray-600">Complétez les informations
                         requises</p>
@@ -216,7 +215,7 @@
 
                             <div class="form-field">
                                 <label for="dateNotification" class="text-lg form-label">
-                                    Date & Heure de la Notification DTD <span class="text-red-500">*</span>
+                                    Date de la Notification DTD <span class="text-red-500">*</span>
                                 </label>
                                 <input type="date" id="dateNotification" name="dateNotification"
                                     class="w-full px-4 py-3 transition-colors duration-200 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200">
@@ -275,7 +274,7 @@
                         <!-- Auteur -->
                         <div class="form-field">
                             <label for="auteur" class="block mb-1 text-sm font-medium">
-                                Auteur / Média / Compte concerné(s)
+                                Auteur / Média / Compte(s) concerné(s)
                             </label>
                             <input type="text" id="auteur" name="auteur"
                                 placeholder="Nom de la personne, média, page Facebook, compte Twitter, forum, etc."
@@ -502,15 +501,15 @@
                     <!-- Navigation Buttons -->
                     <div id="step-navigation" class="flex justify-between pt-6">
                         <button type="button" id="prev-button"
-                            class="inline-flex items-center justify-center gap-2 px-4 py-2 border-2 rounded-md opacity-100 cursor-not-allowed bg-lime-500 hover:bg-lime-700"
+                            class="inline-flex items-center justify-center gap-2 font-semibold border-2 rounded-md opacity-100 cursor-not-allowed lg:p-4 bg-lime-500 hover:bg-lime-700"
                             disabled>
-                            <i data-lucide="chevron-left" class="w-4 h-4"></i>
+                            <i data-lucide="chevron-left" class="lg:h-4 lg:w-6"></i>
                             Précédent
                         </button>
                         <button type="button" id="next-button"
-                            class="inline-flex items-center justify-center gap-2 px-4 py-2 text-white bg-blue-800 rounded-md hover:bg-blue-600">
+                            class="inline-flex items-center justify-center gap-2 p-4 font-semibold text-white bg-blue-800 rounded-md hover:bg-blue-600">
                             Suivant
-                            <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                            <i data-lucide="chevron-right" class="lg:h-4 lg:w-6"></i>
                         </button>
                     </div>
 
